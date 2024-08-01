@@ -1,0 +1,36 @@
+0                 smod - 0 use IRI/MSIS/1 simulation results as initial distr/2 &alter geo cond
+2000              !iyr - year (yyyy)
+ 7                !imon - month (mm)
+16                !idate - date
+12600.0           !sec - UT seconds
+50400.0           !LT- local time (sec) at geo equator on the side of colat<180 deg
+226.10            !f107  - solar 10.7 cm emission
+191.10            !f107a - 81-day average of f107
+50.0              !Ap    - daily Ap index
+6371.2e3          !r0    - normalization length (m)
+1.0e10            !n0    - normalization density (in m^-3)
+3.12e-7           !B0    - magnetic field strength on Earth's surface (T)
+18000              !ntot  - # of time steps to run
+10                !nout  - time step interval of output
+600              !nosub  - time step interval to output xx, xn, and xn1 for crun
+0                 !npre - time step where the run starts
+0.1               !dt    - time step (sec)
+90.0              !zmin  - bottom boundary (km)
+2000.0 12750.0            !zmax  - top boundary (km)
+80                !a1 - number of cells along x1 (corresponding to r) direction
+360               !a2 - number of cells along x2 (corresponding to theta) direction
+5                 !l  - number of ion species
+4                 !m  - number of neutral species (not including minor species)
+uvbenp02.dat      !initial ionospheric data
+0                 !nvt = 0/1/-1: top BC for B_theta or B_z or no top BC perturbation;
+-200.0            !bimp  - imposed V_theta or V_z (m/s) at the top boundary 
+-2000.0           !bimpf - New value of bimp (m/s) after time period of TL secs
+5.0               !ts    - time (s) to increase Vx at the top bndry from 0 to Vimp
+1800.0             !TL    - time period (s) of keeping the convection velocity
+16.0  164.0       !co-latitudes (deg) of the perturbation magentic field reversal (north)
+196.0  344.0      !co-latitudes (deg) of the perturbation magnetic field reversal (south)
+0.45              !cshap - (>0 && <0.5) shapiro smoothing factor
+22.75 31.25       !d - scale factor in stretching r
+/media/jtu/diska
+uvbenp1199.dat    !for data at time step n-1
+uvbenp1198.dat    !for data at time step n-2
